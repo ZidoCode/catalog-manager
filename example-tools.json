@@ -1,0 +1,14 @@
+{
+  "tools": [
+    {"name": "list_files", "description": "Lists files in a directory.",
+     "inputSchema": {"type": "object", "properties": {"path": {"type": "string"}}}},
+    {"name": "read_file", "description": "Reads a file from disk and returns its full contents as text including all lines from beginning to end. Use this whenever you need to inspect the contents of any file on the filesystem, whether it is source code, configuration, documentation, or data. Supports optional offset and limit parameters for large files.",
+     "inputSchema": {"type": "object", "properties": {"path": {"type": "string"},
+       "offset": {"type": "integer"}, "limit": {"type": "integer"}}}},
+    {"name": "region_lookup", "description": "Looks up a region.",
+     "inputSchema": {"type": "object", "properties": {"region": {"type": "string",
+       "enum": ["us-east-1","us-east-2","us-west-1","us-west-2","eu-west-1","eu-west-2","eu-west-3","eu-central-1","eu-north-1","ap-south-1","ap-northeast-1","ap-northeast-2","ap-southeast-1","ap-southeast-2","sa-east-1","ca-central-1","me-south-1","af-south-1","us-gov-west-1","us-gov-east-1"]}}}},
+    {"name": "freeform_query", "description": "Runs a query.",
+     "inputSchema": {"type": "object", "additionalProperties": true}}
+  ]
+}
