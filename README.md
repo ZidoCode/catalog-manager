@@ -1,5 +1,7 @@
 # catalog-manager
 
+[![M8ven Score](https://m8ven.ai/badge/mcp/zidocode-catalog-manager-3e28cg?v=d37f4093882493413162e99173d30328)](https://m8ven.ai/mcp/zidocode-catalog-manager-3e28cg?s=readme)
+
 **Token budget scanner for MCP tool catalogs.** Dumb math, honest numbers, zero dependencies.
 
 Every tool an MCP server exposes costs tokens on **every single call**: its name,
